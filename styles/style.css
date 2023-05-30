@@ -187,9 +187,6 @@ body {
 .slider .slider__button:hover {
   background-color: #C8D9FB;
 }
-.slider .slider__button:focus, .slider .slider__button:active {
-  background-color: rgba(255, 255, 255, 0);
-}
 .slider .slider__button:focus {
   border: 1px solid #527CCD;
   outline: none;
@@ -204,6 +201,9 @@ body {
   .slider .slider__button {
     width: 55px;
     height: 55px;
+  }
+  .slider .slider__button:focus, .slider .slider__button:active {
+    background-color: rgba(255, 255, 255, 0);
   }
 }
 @media (max-width: 769px) {

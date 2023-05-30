@@ -217,11 +217,6 @@ body {
       background-color: $secondary;
     }
 
-    &:focus,
-    &:active {
-      background-color: #ffffff00;
-    }
-
     &:focus {
       border: 1px solid $primary;
       outline: none;
@@ -238,6 +233,11 @@ body {
     .slider__button {
       width: 55px;
       height: 55px;
+
+      &:focus,
+      &:active {
+        background-color: #ffffff00;
+      }
     }
   }
 
