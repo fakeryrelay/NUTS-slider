@@ -6,20 +6,23 @@ const sliderLineElement = sliderElement.querySelector(".slider__line");
 const sliderLineActiveElement = sliderLineElement.querySelector("div");
 
 const appContentElement = document.querySelector(".app__content-inner");
+const appItemElementsBlocks = appContentElement.querySelectorAll(".app__item-wrapper");
 const appItemElements = appContentElement.querySelectorAll(".app__item");
 
 let activeItem = 0;
 
 let appContentWidth = appContentElement.clientWidth;
-let appItemWidth = appItemElements[0].clientWidth + appItemElements[0].clientLeft * 2;
+let appItemWidth = appItemElementsBlocks[0].clientWidth;
 let gap = appContentWidth % appItemWidth;
 let amountOfShownItems = Math.round(appContentWidth / appItemWidth);
+
+console.log()
 
 let interval;
 
 window.addEventListener("resize", (e) => {
   appContentWidth = appContentElement.clientWidth;
-  appItemWidth = appItemElements[0].clientWidth + 2;
+  appItemWidth = appItemElementsBlocks[0].clientWidth;
   gap = appContentWidth % appItemWidth;
   amountOfShownItems = Math.round(appContentWidth / appItemWidth);
 });
