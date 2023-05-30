@@ -16,6 +16,14 @@ body {
 
 .app {
   margin: 120px 0;
+
+  @media (max-width: 991px) {
+    margin: 100px 0;
+  }
+
+  @media (max-width: 600px) {
+    margin: 70px 0;
+  }
 }
 
 .app__container {
