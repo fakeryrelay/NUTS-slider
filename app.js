@@ -11,7 +11,7 @@ const appItemElements = appContentElement.querySelectorAll(".app__item");
 let activeItem = 0;
 
 let appContentWidth = appContentElement.clientWidth;
-let appItemWidth = appItemElements[0].clientWidth + 2;
+let appItemWidth = appItemElements[0].clientWidth + appItemElements[0].clientLeft * 2;
 let gap = appContentWidth % appItemWidth;
 let amountOfShownItems = Math.round(appContentWidth / appItemWidth);
 
