@@ -90,6 +90,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  height: 100%;
   padding: 20px;
   border: 1px solid #C8D9FB;
 }
