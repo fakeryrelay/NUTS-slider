@@ -15,6 +15,16 @@ body {
 .app {
   margin: 120px 0;
 }
+@media (max-width: 991px) {
+  .app {
+    margin: 100px 0;
+  }
+}
+@media (max-width: 600px) {
+  .app {
+    margin: 70px 0;
+  }
+}
 
 .app__container {
   width: 100%;
@@ -169,13 +179,20 @@ body {
   width: 60px;
   height: 60px;
   flex-shrink: 0;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
   border: 1px solid #C8D9FB;
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
 }
 .slider .slider__button:hover {
   background-color: #C8D9FB;
+}
+.slider .slider__button:focus, .slider .slider__button:active {
+  background-color: rgba(255, 255, 255, 0);
+}
+.slider .slider__button:focus {
+  border: 1px solid #527CCD;
+  outline: none;
 }
 @media (max-width: 991px) {
   .slider {

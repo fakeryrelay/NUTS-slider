@@ -206,7 +206,7 @@ body {
     height: 60px;
     flex-shrink: 0;
 
-    background-color: transparent;
+    background-color: #ffffff00;
 
     border: 1px solid $secondary;
 
@@ -215,6 +215,16 @@ body {
 
     &:hover {
       background-color: $secondary;
+    }
+
+    &:focus,
+    &:active {
+      background-color: #ffffff00;
+    }
+
+    &:focus {
+      border: 1px solid $primary;
+      outline: none;
     }
   }
 
